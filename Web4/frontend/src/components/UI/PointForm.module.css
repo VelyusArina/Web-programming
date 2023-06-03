@@ -1,0 +1,40 @@
+.form__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.form_input__wrapper {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.form_input_name {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.form_input_buttons__wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form_input_buttons__wrapper > * {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.form_input_submit__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.form_input_submit__wrapper > * {
+    align-content: center;
+}

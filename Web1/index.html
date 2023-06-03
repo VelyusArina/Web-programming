@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>ITMO Lab_1 ArinaVelyus</title>
+        <link type = "text/css" rel="stylesheet" href="css/style.css">
+        <link type = "text/php" rel="stylesheet" href="public_html/php/main.php">
+    </head>
+
+    <body>
+        <div class="conteiner">
+            <header class="header">
+                <div class="head_indo">Лабораторная работа</div>
+                <nav class="link_info">
+                    <a class="nav_link" target="_blank" href="https://se.ifmo.ru/courses/web">Вариант: 1504</a>
+                    <a class="nav_link" target="_blank" href="https://docs.google.com/spreadsheets/d/1SDtymX4tyDu_MzmZ7l4IkKyc41A-1t-5DiNk6zVMIBU/edit#gid=1794742412">Группа: P32151</a>
+                    <a class="nav_link" target="_blank" href="https://github.com/ArinaVelyus">Велюс А.К.</a>
+                </nav>
+            </header>
+
+            <div class="content">
+                <div class="content-photo">
+                    <div class="graph">
+                        <canvas id="graph" width="300" height="300"></canvas>
+                    </div> 
+                    <div class="data">
+                        <div class="caption">Данные</div>
+                        <form action="" method="post">
+                            <div class="coordinates">     
+                                <div class="row-coordinates">
+                                    <div class="name-coordinates">X:</div>
+                                    <select class="input" id="x-select"> 
+                                        <option>Выбрать X</option>
+                                        <option name='x-select' value="-4">-4</option>
+                                        <option name='x-select' value="-3">-3</option>
+                                        <option name='x-select' value="-2">-2</option>
+                                        <option name='x-select' value="-1">-1</option>
+                                        <option name='x-select' value="0">0</option>
+                                        <option name='x-select' value="1">1</option>
+                                        <option name='x-select' value="2">2</option>
+                                        <option name='x-select' value="3">3</option>
+                                        <option name='x-select' value="4">4</option>
+                                    </select>
+                                </div>
+                                <div class="row-coordinates">
+                                    <div class="name-coordinates">Y:</div>
+                                    <label ><input type="text" id="y-text" size=100%  name="y" placeholder="Введите число в интервале (-3 ; 3)" maxlength="5"></label>
+                                </div>
+                                <div class="row-coordinates">
+                                    <div class="name-coordinates">R:</div>
+                                    <select class="input" id="r-select"> 
+                                        <option>Выбрать R</option>
+                                        <option name='r-select' value="1">1</option>
+                                        <option name='r-select' value="1.5">1.5</option>
+                                        <option name='r-select' value="2">2</option>
+                                        <option name='r-select' value="2.5">2.5</option>
+                                        <option name='r-select' value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="button-coordinates">
+                                    <button class="send-button button" id="submitButton" type="submit">Отправить</button>
+                                    <button class="clear-button button" id="clearButton" type="reset">Очистить</button>
+                                </div>
+                            </div>    
+                        </form>
+                    </div>
+                </div>
+
+                <div class="content-cell">
+                    <div class="result-table">
+                        <div class="caption">Результат</div>
+                        <table id="result-table">
+                            <tr class="row">
+                                <th>X</th>
+                                <th>Y</th>
+                                <th>R</th>
+                                <th>Локальное время</th>
+                                <th>Время исполнения</th>
+                                <th>Попадание</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+    
+    <script src="js/jquery-3.5.1.min.js" type="text/javascript"></script>
+    <script src="js/graph.js" type="text/javascript"> </script> 
+    <script src="js/main.js" type="text/javascript"></script>
+    
+    </body>  
+</html>

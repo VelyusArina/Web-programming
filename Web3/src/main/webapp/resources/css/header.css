@@ -1,0 +1,46 @@
+
+#header{
+    display: grid;
+    font-weight: bold;
+    padding-top: 50px;
+    justify-items: center;
+}
+
+body {
+    display: grid;
+    justify-content: center; /* центрируйте элементы по горизонтали */
+    align-items: center; /* центрируйте элементы по вертикали */
+    font-size: 21px;
+}
+/*h2,#resultMessage,#pointsForm,#resultMessageDiv{*/
+/*    text-align:center;*/
+/*}*/
+#hiddenFields {
+    display: none;
+}
+div{
+    min-height: 30px;
+}
+#clock {
+    min-height: 24px;
+}
+
+.back_to_main{
+    background-color: rgb(33, 50, 159);
+    border: none;
+    color: white;
+    padding: 2% 5%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5% 5% 5% 50px;
+    cursor: pointer;
+}
+.back_to_main:hover {
+    background-color: rgba(33, 50, 159, 0.91);
+}
+
+
+
+
+

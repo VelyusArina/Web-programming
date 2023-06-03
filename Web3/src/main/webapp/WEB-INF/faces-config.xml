@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                                  http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+
+    <navigation-rule>
+        <from-view-id>/start.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>index</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/index.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>start</from-outcome>
+            <to-view-id>/start.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <managed-bean>
+        <managed-bean-name>node</managed-bean-name>
+        <managed-bean-class>managedBeans.Node</managed-bean-class>
+        <managed-bean-scope>none</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>elementInfoDAO</managed-bean-name>
+        <managed-bean-class>managedBeans.ElementInfoDAO</managed-bean-class>
+        <managed-bean-scope>none</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>managedPointBean</managed-bean-name>
+        <managed-bean-class>managedBeans.ManagedPointBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+        <managed-property>
+            <property-name>resultMessage</property-name>
+            <property-class>java.lang.String</property-class>
+            <value/>
+        </managed-property>
+        <managed-property>
+            <property-name>node</property-name>
+            <property-class>managedBeans.Node</property-class>
+            <value>#{node}</value>
+        </managed-property>
+        <managed-property>
+            <property-name>elementInfoDAO</property-name>
+            <property-class>managedBeans.ElementInfoDAO</property-class>
+            <value>#{elementInfoDAO}</value>
+        </managed-property>
+    </managed-bean>
+</faces-config>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>Стартовая страница лабораторная работы №3</title>
+    <h:outputStylesheet library="css" name="header.css"/>
+</h:head>
+<h:body>
+    <f:view>
+        <div id="header">
+            <h3>Велюс Арина</h3>
+            <p>
+                <b>группа:</b> P32151
+                <b>вариант:</b> 15940
+            </p>
+            <hr/>
+            <h:button styleClass="back_to_main" outcome="index" value = "Перейти на основную страницу приложения"/>
+        </div>
+        <div id="core">
+            <div>
+                <h:outputLabel for="clock" value="Интерактивные часы, обновляющиеся раз в 5 секунд"/> <br/>
+                <h:outputLabel id="clock" value=""/> <br/>
+            </div>
+        </div>
+    </f:view>
+    <h:outputScript library="js" name="clock.js"/>
+</h:body>
+</html>

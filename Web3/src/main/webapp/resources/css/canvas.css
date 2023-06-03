@@ -1,0 +1,22 @@
+#graphic{
+    display: grid;
+    grid-row-start:1;
+    grid-row-end:4;
+    grid-column-start:1;
+    grid-column-end:4;
+}
+#graphic canvas{
+    height: 400px;
+    width: 400px;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#GraphicCanvas{
+    z-index: 0;
+}
+#GraphicFigures{
+    z-index: 1;
+}
+#GraphicPoints{
+    z-index: 2;
+}

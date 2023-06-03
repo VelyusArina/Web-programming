@@ -1,0 +1,9 @@
+.my_canvas__wrapper {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my_canvas {
+ }

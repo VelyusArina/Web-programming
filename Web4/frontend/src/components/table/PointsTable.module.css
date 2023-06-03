@@ -1,0 +1,27 @@
+.point_table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 15px solid #F2F8F8;
+    border-top: 5px solid #F2F8F8;
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+.point_table th {
+    font-weight: bold;
+    padding: 5px;
+    background: #F2F8F8;
+    border: none;
+    border-bottom: 5px solid #F2F8F8;
+}
+.point_table td {
+    padding: 5px;
+    border: none;
+    border-bottom: 5px solid #F2F8F8;
+}
+.hit_cell_yes {
+    color: lightgreen;
+}
+.hit_cell_no {
+     color: red;
+ }
+

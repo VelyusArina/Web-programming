@@ -1,0 +1,42 @@
+#header{
+    display: grid;
+    font-weight: bold;
+    padding-top: 50px;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+body {
+    font-size: 21px;
+
+}
+h2,#resultMessage,#pointsForm,#resultMessageDiv{
+    text-align:center;
+}
+#hiddenFields {
+    display: none;
+}
+div{
+    min-height: 30px;
+}
+
+.back_to_main , .addPoint , .clearPoint{
+    background-color: rgb(33, 50, 159);
+    border: none;
+    color: white;
+    padding: 1% 2%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    /*margin: 5% 5% 5% 30px;*/
+    cursor: pointer;
+}
+.back_to_main:hover , .addPoint:hover , .clearPoint:hover{
+    background-color: rgba(33, 50, 159, 0.91);
+}
+
+#pointsForm{
+    display: grid;
+    padding-top: 25px;
+    grid-row-gap: 5px;
+}

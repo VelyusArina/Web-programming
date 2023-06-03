@@ -1,0 +1,25 @@
+.hit_message {
+    text-align: center;
+}
+
+.hit_message > * {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hit_message_yes {
+    color: white;
+    background-color: lightgreen;
+    font-size: 30px;
+    font-weight: bold;
+    border: darkgreen solid 2px;
+    border-radius: 10px;
+}
+.hit_message_no {
+    color: white;
+    background-color: red;
+    font-size: 30px;
+    font-weight: bold;
+    border: darkred solid 2px;
+    border-radius: 0;
+}
